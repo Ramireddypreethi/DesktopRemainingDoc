@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <!-- it works for only id -->
+    <!-- if want to work with classname then take index -->
+    <h2 id="head1">heading2</h2>
+    <h2 id="head2">heading3</h2>
+    <h3 id="head3">heading3</h3>
+    <h3 id="head4">heading3</h3>
+    <h3 id="head5" style="color:blue;">heading5</h3>
+    <button id="btn1">BUTTON1</button>
+    <button id="btn2">BUTTON2</button>
+    <script>
+        var bt1=document.getElementById('btn1');
+        var bt2=document.getElementById('btn2');
+        var h1=document.getElementById('head1');
+        var h2=document.getElementById('head2');
+        var h3=document.getElementById('head3');
+        var h4=document.getElementById('head4');
+        var h5=document.getElementById('head5');
+        h3.addEventListener('click',function(){
+            h3.style.color="grey";
+        })
+        h1.addEventListener('click',function(){
+            alert("head1");
+            h1.style.color="orange";
+        })
+        h2.addEventListener('click',function(){
+            h1.innerHTML='heading heading';
+            h1.style.color="yellow";
+        })
+
+        bt1.addEventListener('click',function(){
+            bt2.innerHTML='BUTTON BUTTON';
+        })
+        bt2.addEventListener('click',function(){
+            bt1.innerHTML='BUTTON BUTTON';
+        })
+     h4.addEventListener('mouseover',function(){
+        h4.style.color="black";
+     })
+     h5.addEventListener('mouseover',function(){
+        h5.style.color="black";
+    
+     })
+     h5.addEventListener('mouseout',function(){ 
+        h5.style.color="grey";
+    
+     })
+     
+    </script>
+</body>
+</html>

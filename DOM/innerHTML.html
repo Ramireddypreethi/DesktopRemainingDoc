@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">this a paragraph1</p>
+    <p id="p1" onclick="myFunction()">this a paragraph2</p>
+    <ul id="ul">
+        <li>cofeee</li>
+        <li>tea</li>
+        <li>cold coffee</li>
+    </ul>
+    <p>getting list og drinkd below me</p>
+   <p></p>
+    <script>
+        var para1=document.getElementById('p');
+        var html=document.getElementById('ul').innerHTML;
+        para1.onclick=function(){
+            para1.innerHTML=""; //to delete the paragraph using innerHTML
+        }
+        function myFunction(){
+            document.getElementById('p1').innerHTML="";
+        }
+        var para2=document.getElementsByTagName('p')[3].innerHTML=html;
+        
+    </script>
+</body>
+</html>
